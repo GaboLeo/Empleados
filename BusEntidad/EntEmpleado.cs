@@ -10,6 +10,8 @@ namespace GaboLeo.Empleados.Business.Entidad
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
+        public int PuestoId { get; set; }
+        public int DepartamentoId { get; set; }
 
         private EntPuesto puesto;
 
