@@ -9,12 +9,12 @@ namespace GaboLeo.Empleados.Data
 {
     public class DatAbstracta
     {
-         public SqlConnection con;
-        public DatAbstracta() 
-        { 
-            con= new SqlConnection("Data Source=LEONEL\\MSSQLSERVER2012; User Id=sa; Password=12345; Initial Catalog=EMPLEADOS;");
+        public SqlConnection con;
+        public DatAbstracta()
+        {
+            con = new SqlConnection("Data Source=CASALAP; User Id=sa; Password=12345; Initial Catalog=EMPLEADOS;");
         }
-        
-        
+
+
     }
 }

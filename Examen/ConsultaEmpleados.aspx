@@ -39,7 +39,7 @@
                                 <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Departamento") %>'></asp:TextBox>
                             </EditItemTemplate>
                             <ItemTemplate>
-                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("Departamento") %>'></asp:Label>
+                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("Departamento.Nombre") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:TemplateField HeaderText="[Puesto]">
@@ -47,7 +47,7 @@
                                 <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("Puesto") %>'></asp:TextBox>
                             </EditItemTemplate>
                             <ItemTemplate>
-                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("Puesto") %>'></asp:Label>
+                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("Puesto.Nombre") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:TemplateField HeaderText="[Nombre]">

@@ -25,7 +25,7 @@ namespace GaboLeo.Empleados.Business
                 ent.PuestoId = Convert.ToInt32(dr["EMPL_PUES_ID"].ToString());
                 ent.Puesto.Nombre = dr["PUES_NOMB"].ToString();
                 ent.DepartamentoId = Convert.ToInt32(dr["EMPL_DEPA_ID"].ToString());
-                ent.Departamento.Nombre = dr["DEPA_ID"].ToString();
+                ent.Departamento.Nombre = dr["DEPA_NOMB"].ToString();
                 lst.Add(ent);
             }
             return lst;
@@ -40,7 +40,7 @@ namespace GaboLeo.Empleados.Business
             ent.PuestoId = Convert.ToInt32(dt.Rows[0]["EMPL_PUES_ID"].ToString());
             ent.Puesto.Nombre = dt.Rows[0]["PUES_NOMB"].ToString();
             ent.DepartamentoId = Convert.ToInt32(dt.Rows[0]["EMPL_DEPA_ID"].ToString());
-            ent.Departamento.Nombre = dt.Rows[0]["DEPA_ID"].ToString();
+            ent.Departamento.Nombre = dt.Rows[0]["DEPA_NOMB"].ToString();
             return ent;
         }
         public List<EntPuesto> ObtenerPuesto()
@@ -60,11 +60,11 @@ namespace GaboLeo.Empleados.Business
         {
             DataTable dt = new DatEmpleado().ObtenerDepartamento();
             List<EntDepartamento> lst = new List<EntDepartamento>();
-            foreach(DataRow dr in dt.Rows)
+            foreach (DataRow dr in dt.Rows)
             {
                 EntDepartamento ent = new EntDepartamento();
                 ent.Id = Convert.ToInt32(dr["DEPA_ID"].ToString());
-                ent.Nombre=dr["DEPA_NOMB"].ToString();
+                ent.Nombre = dr["DEPA_NOMB"].ToString();
                 lst.Add(ent);
             }
             return lst;
