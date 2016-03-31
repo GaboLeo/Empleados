@@ -1,0 +1,75 @@
+USE [Empleados]
+GO
+/****** Object:  StoredProcedure [dbo].[spCatalogoDepartamentos]    Script Date: 30/03/2016 08:10:16 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--exec spCatalogoDepartamentos
+CREATE PROC [dbo].[spCatalogoDepartamentos]
+AS
+    BEGIN	
+        SELECT  DEPA_ID ,
+                DEPA_NOMB
+        FROM    dbo.Departamentos;
+    END;
+GO
+/****** Object:  StoredProcedure [dbo].[spCatalogoPuestos]    Script Date: 30/03/2016 08:10:16 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--exec spCatalogoPuestos
+CREATE PROC [dbo].[spCatalogoPuestos]
+AS
+    BEGIN	
+        SELECT  PUES_ID ,
+                PUES_NOMB
+        FROM    dbo.Puestos;
+    END;
+GO
+/****** Object:  StoredProcedure [dbo].[spObtenerEmpleados]    Script Date: 30/03/2016 08:10:16 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--exec spObtenerEmpleados
+CREATE PROCEDURE [dbo].[spObtenerEmpleados]
+AS
+    BEGIN
+        SELECT  EMPL_ID ,
+                EMPL_NOMB ,
+                EMPL_PUES_ID ,
+                EMPL_DEPA_ID ,
+                PUES_ID ,
+                PUES_NOMB ,
+                DEPA_ID ,
+                DEPA_NOMB
+        FROM    dbo.Empleado
+                INNER JOIN dbo.Puestos ON EMPL_PUES_ID = PUES_ID
+                INNER JOIN dbo.Departamentos ON EMPL_DEPA_ID = DEPA_ID;
+    END;
+GO
+/****** Object:  StoredProcedure [dbo].[spObtenerEmpleadosId]    Script Date: 30/03/2016 08:10:16 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--exec spObtenerEmpleadosId 2
+CREATE PROCEDURE [dbo].[spObtenerEmpleadosId] @Id INT
+AS
+    BEGIN
+        SELECT  EMPL_ID ,
+                EMPL_NOMB ,
+                EMPL_PUES_ID ,
+                EMPL_DEPA_ID ,
+                PUES_ID ,
+                PUES_NOMB ,
+                DEPA_ID ,
+                DEPA_NOMB
+        FROM    dbo.Empleado
+                INNER JOIN dbo.Puestos ON EMPL_PUES_ID = PUES_ID
+                INNER JOIN dbo.Departamentos ON EMPL_DEPA_ID = DEPA_ID
+        WHERE   EMPL_ID = @Id;
+    END;
+GO
