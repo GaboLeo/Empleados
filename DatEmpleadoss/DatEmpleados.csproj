@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2CF7042E-71F5-48E4-AE92-17F02E62F622}</ProjectGuid>
+    <ProjectGuid>{C551BA9C-D12A-401D-A030-EA81B53AC0B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GaboLeo.Empleados.Business</RootNamespace>
-    <AssemblyName>BusEmpleados</AssemblyName>
+    <RootNamespace>GaboLeo.Empleados.Data</RootNamespace>
+    <AssemblyName>DatEmpleadoss</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,18 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusEmpleado.cs" />
+    <Compile Include="DatAbstracta.cs" />
+    <Compile Include="DatEmpleado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BusEntidad\BusEntidad.csproj">
-      <Project>{fed66c33-6449-4cea-9ccd-0bebf6f2af6f}</Project>
-      <Name>BusEntidad</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DatEmpleadoss\DatEmpleados.csproj">
-      <Project>{c551ba9c-d12a-401d-a030-ea81b53ac0b3}</Project>
-      <Name>DatEmpleados</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
