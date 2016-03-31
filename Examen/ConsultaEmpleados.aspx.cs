@@ -18,10 +18,19 @@ public partial class ConsultaEmpleados : System.Web.UI.Page
         }
     }
 
+    private void CargarPuestos()
+    {
+        ddlPuestos.DataSource = new BusEmpleado().ObtenerPuesto();
+        ddlPuestos.DataTextField = "Nombre";
+        ddlPuestos.DataValueField = "Id";
+        ddlPuestos.DataBind();
+    }
+
     private void CargarDepartamentos()
     {
         ddlDepartamentos.DataSource = new BusEmpleado().ObtenerDepartamento();
-        ddlDepartamentos.DataTextField = Nombre;
+        ddlDepartamentos.DataTextField = "Nombre";
+        ddlDepartamentos.DataValueField = "Id";
     }
     private void CargarGrid()
     {
