@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Examen", "http://localhost:1931", "{A189EACD-876E-4D68-919E-5377306F7F12}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{2cf7042e-71f5-48e4-ae92-17f02e62f622}|BusEmpleados.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1931"
+		Debug.AspNetCompiler.PhysicalPath = "Examen\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1931\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1931"
+		Release.AspNetCompiler.PhysicalPath = "Examen\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1931\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Examen\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 UI", "1 UI", "{5EE291D0-CF65-4682-888B-AA041EFF4251}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 BUSINESS", "2 BUSINESS", "{EB610BA8-F8AF-45DF-820E-060DA9E9B3FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 DATA", "3 DATA", "{F498F504-ED78-4391-8CAC-ED54A63278F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatEmpleadoss", "DatEmpleadoss\DatEmpleadoss.csproj", "{C551BA9C-D12A-401D-A030-EA81B53AC0B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusEmpleados", "BusEmpleados\BusEmpleados.csproj", "{2CF7042E-71F5-48E4-AE92-17F02E62F622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusEntidad", "BusEntidad\BusEntidad.csproj", "{FED66C33-6449-4CEA-9CCD-0BEBF6F2AF6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A189EACD-876E-4D68-919E-5377306F7F12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A189EACD-876E-4D68-919E-5377306F7F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A189EACD-876E-4D68-919E-5377306F7F12}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A189EACD-876E-4D68-919E-5377306F7F12}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C551BA9C-D12A-401D-A030-EA81B53AC0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C551BA9C-D12A-401D-A030-EA81B53AC0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C551BA9C-D12A-401D-A030-EA81B53AC0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C551BA9C-D12A-401D-A030-EA81B53AC0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CF7042E-71F5-48E4-AE92-17F02E62F622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CF7042E-71F5-48E4-AE92-17F02E62F622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CF7042E-71F5-48E4-AE92-17F02E62F622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF7042E-71F5-48E4-AE92-17F02E62F622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED66C33-6449-4CEA-9CCD-0BEBF6F2AF6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED66C33-6449-4CEA-9CCD-0BEBF6F2AF6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED66C33-6449-4CEA-9CCD-0BEBF6F2AF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED66C33-6449-4CEA-9CCD-0BEBF6F2AF6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A189EACD-876E-4D68-919E-5377306F7F12} = {5EE291D0-CF65-4682-888B-AA041EFF4251}
+		{2CF7042E-71F5-48E4-AE92-17F02E62F622} = {EB610BA8-F8AF-45DF-820E-060DA9E9B3FF}
+		{FED66C33-6449-4CEA-9CCD-0BEBF6F2AF6F} = {EB610BA8-F8AF-45DF-820E-060DA9E9B3FF}
+		{C551BA9C-D12A-401D-A030-EA81B53AC0B3} = {F498F504-ED78-4391-8CAC-ED54A63278F9}
+	EndGlobalSection
+EndGlobal
