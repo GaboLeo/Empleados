@@ -69,5 +69,12 @@ namespace GaboLeo.Empleados.Business
             }
             return lst;
         }
+        public void Insertar(EntEmpleado ent)
+        {
+            int filas=new DatEmpleado().Insertar(ent.Id,ent.Nombre,ent.PuestoId,ent.DepartamentoId);
+        
+            if (filas != 1)
+                throw new ApplicationException(string.Format("Error al insertar a {0}", ent.Nombre));
+        }
     }
 }
